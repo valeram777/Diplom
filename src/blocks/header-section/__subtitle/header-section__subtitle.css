@@ -1,0 +1,15 @@
+.header-section__subtitle {
+  font-family: 'Roboto-regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 510px) {
+  .header-section__subtitle {
+    font-size: 20px;
+  }
+}

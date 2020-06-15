@@ -1,0 +1,11 @@
+.commits__card__author__text__name {
+  font-family: 'Roboto-slab-regular';
+  font-size: 26px;
+  display: block;
+}
+
+@media (max-width: 950px) {
+  .commits__card__author__text__name {
+    font-size: 20px;
+  }
+}

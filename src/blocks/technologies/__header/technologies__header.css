@@ -1,0 +1,13 @@
+.technologies__header {
+  font-family: "Roboto-slab-regular";
+  font-size: 40px;
+  margin: 0;
+}
+
+@media (max-width: 1300px) {
+  .technologies__header {
+    max-width: 340px;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}

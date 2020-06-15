@@ -1,0 +1,9 @@
+@import url('./__list/breadcrumbs__list.css');
+@import url('./__item/breadcrumbs__item.css');
+@import url('./__link/breadcrumbs__link.css');
+
+@media (max-width: 510px) {
+  .breadcrumbs {
+    display: none;
+  }
+}

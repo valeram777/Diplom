@@ -1,0 +1,11 @@
+.header-section__container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .header-section__container {
+    width: auto;
+    margin: 0 16px;
+  }
+}

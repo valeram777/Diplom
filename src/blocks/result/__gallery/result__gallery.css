@@ -1,0 +1,24 @@
+@import url("./__card/result__card.css");
+
+.result__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 64px;
+}
+
+@media (max-width: 970px) {
+  .result__gallery {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 510px) {
+  .result__gallery {
+    margin-top: 36px;
+    grid-template-columns: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+.about__image {
+  box-sizing: border-box;
+  padding-right: 50px;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .about__image {
+    padding-right: 0;
+    margin: 0 auto 24px;
+    max-width: 300px;
+  }
+}

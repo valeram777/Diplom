@@ -1,0 +1,6 @@
+@import url("./--left/glide__arrow__image--left.css");
+
+.glide__arrow__image {
+  filter: brightness(0) invert(1);
+  width: 30px;
+}

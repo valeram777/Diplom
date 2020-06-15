@@ -1,0 +1,5 @@
+@import url("./_active/menu__item_active.css");
+
+.header_dark .menu__item:hover {
+  color: #000;
+}

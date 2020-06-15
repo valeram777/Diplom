@@ -1,0 +1,27 @@
+@import url("./__arrow/glide__arrow.css");
+@import url("./__bullets/glide__bullets.css");
+@import url("./__bullet/glide__bullet.css");
+@import url("./__slide/glide__slide.css");
+
+.glide {
+  margin-top: 60px;
+}
+
+.glide::before,
+.glide::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 5%;
+  background: linear-gradient(90deg, #f5f6f7, transparent);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.glide::after {
+  left: auto;
+  right: 0;
+  background: linear-gradient(-90deg, #f5f6f7, transparent);
+}

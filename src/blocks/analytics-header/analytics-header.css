@@ -1,0 +1,18 @@
+@import url('./__header/analytics-header__header.css');
+@import url('./__counts/analytics-header__counts.css');
+
+.analytics-header {
+  padding: 40px 0 80px;
+}
+
+@media (max-width: 1300px) {
+  .analytics-header {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 510px) {
+  .analytics-header {
+    padding: 0 0 24px;
+  }
+}

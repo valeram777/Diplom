@@ -1,0 +1,18 @@
+@import url("./__image/glide__arrow__image.css");
+
+.glide__arrow {
+  background-color: #1a1b22;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1300px) {
+  .glide__arrow {
+    display: none;
+  }
+}

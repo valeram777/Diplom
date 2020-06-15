@@ -1,0 +1,11 @@
+@import url('./--active/glide__bullet--active.css');
+
+.glide__bullet {
+  background-color: #D1D2D6;
+  transition: .2s ease-in-out;
+}
+
+.glide__bullet:hover, .glide__bullet:focus {
+  background-color: #000;
+  border: none;
+}

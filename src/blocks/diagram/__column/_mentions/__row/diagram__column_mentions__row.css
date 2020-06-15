@@ -1,0 +1,35 @@
+.diagram__column_mentions .diagram__column__row {
+  background: #2f71e5;
+  color: white;
+  font-family: "Roboto-medium";
+  font-size: 16px;
+  padding-left: 6px;
+}
+
+.diagram__column_mentions .diagram__column__row:nth-child(3) {
+  width: 15%;
+}
+
+.diagram__column_mentions .diagram__column__row:nth-child(4) {
+  width: 18%;
+}
+
+.diagram__column_mentions .diagram__column__row:nth-child(5) {
+  width: 11%;
+}
+
+.diagram__column_mentions .diagram__column__row:nth-child(6) {
+  width: 39%;
+}
+
+.diagram__column_mentions .diagram__column__row:nth-child(7) {
+  width: 45%;
+}
+
+.diagram__column_mentions .diagram__column__row:nth-child(8) {
+  width: 73%;
+}
+
+.diagram__column_mentions .diagram__column__row:nth-child(9) {
+  width: 34%;
+}
