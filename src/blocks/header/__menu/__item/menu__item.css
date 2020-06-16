@@ -3,7 +3,7 @@
 .menu__item {
   margin-left: 34px;
   color: #b6bcbf;
-  font-family: "Roboto-medium";
+  font-family: "Roboto-medium", sans-serif;
   font-style: normal;
   font-size: 18px;
   text-decoration: none;

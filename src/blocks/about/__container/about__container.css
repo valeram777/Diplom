@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .container.about__container {
     margin-bottom: 16px;
     grid-template-columns: 100%;

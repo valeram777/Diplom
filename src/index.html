@@ -16,7 +16,7 @@
       href="<%=require('./images/favicon.svg').default%>"
     />
   </head>
-  
+
   <body class="body">
     <section class="header-section">
       <header class="header">
@@ -26,7 +26,7 @@
           </div>
           <ul class="header__menu">
             <li>
-              <a href="/" class="menu__item menu__item_active">Главная</a>
+              <a href="index.html" class="menu__item menu__item_active">Главная</a>
             </li>
             <li><a href="about.html" class="menu__item">О проекте</a></li>
           </ul>
@@ -45,6 +45,9 @@
             name="search"
             class="header-section__input header-section__input_type-name"
             placeholder="Введите тему новости"
+            required
+            minlength="2"
+            maxlength="1000"
           />
 
           <button class="header-section__button">Искать</button>
@@ -65,7 +68,7 @@
       <img
         class="no-results__image"
         src="<%=require('./images/not-found_v1.png').default%>"
-        alt='no results'
+        alt="no results"
       />
       <div class="no-results__title">
         Ничего не найдено
@@ -82,7 +85,7 @@
           <a href="analytics.html" class="section-header__link">
             Посмотреть аналитику
             <img
-              class="section-header__link__image"
+              class="link__image_section-header"
               src="<%=require('./images/arrow.svg').default%>"
               alt="move"
             />
@@ -91,101 +94,113 @@
         <div class="result__gallery">
           <div class="result__card">
             <img
-              class="result__card__image"
+              class="card__image"
               src="<%=require('./images/card/image_08.png').default%>"
               alt="nature"
             />
-            <time class="result__card__time" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="result__card__title">Национальное достояние – парки</h6>
-            <p class="result__card__subtitle">
+            <time class="card__time" datetime="2019-08-02"
+              >2 августа, 2019</time
+            >
+            <h6 class="card__title">Национальное достояние – парки</h6>
+            <p class="card__subtitle">
               В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
               начала складываться система национальных парков – охраняемых
               территорий, где и сегодня каждый может приобщиться к природе.
             </p>
-            <span class="result__card__source">Лента.ру</span>
+            <span class="card__source">Лента.ру</span>
           </div>
           <div class="result__card">
             <img
-              class="result__card__image"
+              class="card__image"
               src="<%=require('./images/card/image_04.png').default%>"
               alt="nature"
             />
-            <time class="result__card__time" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="result__card__title">
+            <time class="card__time" datetime="2019-08-02"
+              >2 августа, 2019</time
+            >
+            <h6 class="card__title">
               Лесные огоньки: история одной фотографии
             </h6>
-            <p class="result__card__subtitle">
+            <p class="card__subtitle">
               Фотограф отвлеклась от освещения суровой политической реальности
               Мексики, чтобы запечатлеть ускользающую красоту одного из местных
               чудес природы.
             </p>
-            <span class="result__card__source">Медуза</span>
+            <span class="card__source">Медуза</span>
           </div>
           <div class="result__card">
             <img
-              class="result__card__image"
+              class="card__image"
               src="<%=require('./images/card/image_07.png').default%>"
               alt="nature"
             />
-            <time class="result__card__time" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="result__card__title">
+            <time class="card__time" datetime="2019-08-02"
+              >2 августа, 2019</time
+            >
+            <h6 class="card__title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
-            <p class="result__card__subtitle">
+            <p class="card__subtitle">
               Знаменитый фотограф снимает первозданные леса России, чтобы
               рассказать о необходимости их сохранения. В этот раз он отправился
               в Двинско-Пинежскую тайгу, где...
             </p>
-            <span class="result__card__source">Риа</span>
+            <span class="card__source">Риа</span>
           </div>
           <div class="result__card">
             <img
-              class="result__card__image"
+              class="card__image"
               src="<%=require('./images/card/image_06.png').default%>"
               alt="nature"
             />
-            <time class="result__card__time" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="result__card__title">Национальное достояние – парки</h6>
-            <p class="result__card__subtitle">
+            <time class="card__time" datetime="2019-08-02"
+              >2 августа, 2019</time
+            >
+            <h6 class="card__title">Национальное достояние – парки</h6>
+            <p class="card__subtitle">
               В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
               начала складываться система национальных парков – охраняемых
               территорий, где и сегодня каждый может приобщиться к природе.
             </p>
-            <span class="result__card__source">Дзен</span>
+            <span class="card__source">Дзен</span>
           </div>
           <div class="result__card">
             <img
-              class="result__card__image"
+              class="card__image"
               src="<%=require('./images/card/image_01.png').default%>"
               alt="nature"
             />
-            <time class="result__card__time" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="result__card__title">
+            <time class="card__time" datetime="2019-08-02"
+              >2 августа, 2019</time
+            >
+            <h6 class="card__title">
               Лесные огоньки: история одной фотографии
             </h6>
-            <p class="result__card__subtitle">
+            <p class="card__subtitle">
               Фотограф отвлеклась от освещения суровой политической реальности
               Мексики, чтобы запечатлеть ускользающую красоту одного из местных
               чудес природы.
             </p>
-            <span class="result__card__source">Афиша</span>
+            <span class="card__source">Афиша</span>
           </div>
           <div class="result__card">
             <img
-              class="result__card__image"
+              class="card__image"
               src="<%=require('./images/card/image_05.png').default%>"
               alt="nature"
             />
-            <time class="result__card__time" datetime="2019-08-02">2 августа, 2019</time>
-            <h6 class="result__card__title">
+            <time class="card__time" datetime="2019-08-02"
+              >2 августа, 2019</time
+            >
+            <h6 class="card__title">
               «Первозданная тайга»: новый фотопроект Игоря Шпиленка
             </h6>
-            <p class="result__card__subtitle">
+            <p class="card__subtitle">
               Знаменитый фотограф снимает первозданные леса России, чтобы
               рассказать о необходимости их сохранения. В этот раз он отправился
               в Двинско-Пинежскую тайгу, где...
             </p>
-            <span class="result__card__source">Медиазона</span>
+            <span class="card__source">Медиазона</span>
           </div>
         </div>
         <button class="result__more-button">Показать еще</button>
@@ -194,11 +209,17 @@
 
     <section class="about">
       <div class="container about__container">
-        <img
-          src="<%=require('./images/image-03.png').default%>"
-          class="about__image"
-          alt="avatar"
-        />
+        <picture>
+          <source
+            srcset="<%=require('./images/image-03-320px.png').default%>"
+            media="(max-width: 320px)"
+          />
+          <img
+            src="<%=require('./images/image-03.png').default%>"
+            alt="avatar"
+            class="about__image"
+          />
+        </picture>
         <div class="about__texts">
           <h3 class="about__title">Об авторе</h3>
           <p class="about__paragraph">
@@ -218,23 +239,23 @@
         <ul class="footer__menu">
           <li><a href="index.html" class="footer__menu-item">Главная</a></li>
           <li><a href="about.html" class="footer__menu-item">О проекте</a></li>
-          <li><a href="https://praktikum.yandex.ru/" class="footer__menu-item">Яндекс.Практикум</a></li>
+          <li>
+            <a href="https://praktikum.yandex.ru/" class="footer__menu-item"
+              >Яндекс.Практикум</a
+            >
+          </li>
         </ul>
         <div class="footer__social">
-          <a href="https://github.com/" class="footer__social__link">
-            <img
-              src="<%=require('./images/github.svg').default%>"
-              alt="github"
-              title="github"
-              class="footer__social__link__image"
-            />
+          <a href="https://github.com/" class="social__link">
+            <img src="<%=require('./images/github.svg').default%>" alt="github"
+            title="github" class=link__image" />
           </a>
-          <a href="https://www.facebook.com/" class="footer__social__link">
+          <a href="https://www.facebook.com/" class="social__link">
             <img
               src="<%=require('./images/facebook.svg').default%>"
               alt="facebook"
               title="facebook"
-              class="footer__social__link__image"
+              class="link__image"
             />
           </a>
         </div>

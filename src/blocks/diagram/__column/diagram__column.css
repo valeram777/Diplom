@@ -1,5 +1,5 @@
-@import url('./__header/diagram__column__header.css');
-@import url('./_date/diagram__column_date.css');
-@import url('./_mentions/diagram__column_mentions.css');
-@import url('./__axis/diagram__column__axis.css');
-@import url('./__row/diagram__column__row.css');
+@import url('./__header/column__header.css');
+@import url('./_date/column_date.css');
+@import url('./_mentions/column_mentions.css');
+@import url('./__axis/column__axis.css');
+@import url('./__row/column__row.css');

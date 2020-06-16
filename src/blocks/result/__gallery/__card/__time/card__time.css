@@ -1,0 +1,13 @@
+.card__time {
+  display: block;
+  font-family: "SourceSansPro-regular", sans-serif;
+  color: #b6bcbf;
+  padding: 0 24px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 700px) {
+  .card__time {
+    padding: 0 16px;
+  }
+}

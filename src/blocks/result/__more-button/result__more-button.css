@@ -1,7 +1,7 @@
 .result__more-button {
   background-color: #fff;
   border-radius: 80px;
-  font-family: "Roboto-regular";
+  font-family: "Roboto-regular", sans-serif;
   padding: 16px 84px;
   border: none;
   display: block;

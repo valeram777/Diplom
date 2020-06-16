@@ -1,4 +1,4 @@
-@import url("./__image/glide__arrow__image.css");
+@import url("./__image/arrow__image.css");
 
 .glide__arrow {
   background-color: #1a1b22;
@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 @media (max-width: 1300px) {

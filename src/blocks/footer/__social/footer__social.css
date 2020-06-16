@@ -1,4 +1,4 @@
-@import url('./__link/footer__social__link.css');
+@import url('./__link/social__link.css');
 
 @media (max-width: 800px) {
   .footer__social {

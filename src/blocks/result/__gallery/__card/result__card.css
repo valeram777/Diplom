@@ -1,8 +1,8 @@
-@import url("./__image/result__card__image.css");
-@import url("./__source/result__card__source.css");
-@import url("./__subtitle/result__card__subtitle.css");
-@import url("./__time/result__card__time.css");
-@import url("./__title/result__card__title.css");
+@import url("./__image/card__image.css");
+@import url("./__source/card__source.css");
+@import url("./__subtitle/card__subtitle.css");
+@import url("./__time/card__time.css");
+@import url("./__title/card__title.css");
 
 .result__card {
   border-radius: 16px;

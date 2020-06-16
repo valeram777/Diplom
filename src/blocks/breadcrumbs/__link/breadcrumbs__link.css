@@ -1,7 +1,7 @@
-@import url('./_active/breadcrumbs__link_active.css');
+@import url("./_active/breadcrumbs__link_active.css");
 
 .breadcrumbs__link {
-  font-family: "Roboto-regular";
+  font-family: "Roboto-regular", sans-serif;
   color: #b6bcbf;
   text-decoration: none;
 }

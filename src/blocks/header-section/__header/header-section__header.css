@@ -1,6 +1,6 @@
 .header-section__header {
   display: inline-block;
-  font-family: "Roboto-slab-regular";
+  font-family: "Roboto-slab-regular", sans-serif;
   font-size: 60px;
   line-height: 64px;
   color: #ffffff;

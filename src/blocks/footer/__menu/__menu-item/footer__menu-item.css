@@ -1,7 +1,7 @@
 .footer__menu-item {
   display: inline-block;
   text-decoration: none;
-  font-family: "Roboto-regular";
+  font-family: "Roboto-regular", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #1a1b22;

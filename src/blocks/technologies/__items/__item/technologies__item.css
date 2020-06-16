@@ -1,5 +1,5 @@
-@import url("./__header/technologies__item__header.css");
-@import url("./__icon/technologies__item__icon.css");
+@import url("./__header/item__header.css");
+@import url("./__icon/item__icon.css");
 
 .technologies__item {
   display: flex;

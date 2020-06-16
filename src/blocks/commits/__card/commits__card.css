@@ -1,6 +1,6 @@
-@import url("./__time/commits__card__time.css");
-@import url("./__author/commits__card__author.css");
-@import url("./__text/commits__card__text.css");
+@import url("./__time/card__time.css");
+@import url("./__author/card__author.css");
+@import url("./__text/card__text.css");
 
 .commits__card {
   width: 400px;

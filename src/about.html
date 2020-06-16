@@ -26,7 +26,11 @@
           <li>
             <a href="index.html" class="menu__item">Главная</a>
           </li>
-          <li><a href="about.html" class="menu__item menu__item_active">О проекте</a></li>
+          <li>
+            <a href="about.html" class="menu__item menu__item_active"
+              >О проекте</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -65,35 +69,35 @@
         <h3 class="technologies__header">Используемые технологии</h3>
         <ul class="technologies__items">
           <li class="technologies__item">
-            <span class="technologies__item__header">HTML</span>
+            <span class="item__header">HTML</span>
             <img
               src="<%=require('./images/html.svg').default%>"
               alt="html"
-              class="technologies__item__icon"
+              class="item__icon"
             />
           </li>
           <li class="technologies__item">
-            <span class="technologies__item__header">CSS</span>
+            <span class="item__header">CSS</span>
             <img
               src="<%=require('./images/css.svg').default%>"
               alt="css"
-              class="technologies__item__icon"
+              class="item__icon"
             />
           </li>
           <li class="technologies__item">
-            <span class="technologies__item__header">Java Script</span>
+            <span class="item__header">Java Script</span>
             <img
               src="<%=require('./images/js.svg').default%>"
               alt="js"
-              class="technologies__item__icon"
+              class="item__icon"
             />
           </li>
           <li class="technologies__item">
-            <span class="technologies__item__header">Webpack</span>
+            <span class="item__header">Webpack</span>
             <img
               src="<%=require('./images/webpack.svg').default%>"
               alt="webpack"
-              class="technologies__item__icon"
+              class="item__icon"
             />
           </li>
         </ul>
@@ -102,11 +106,17 @@
 
     <section class="about">
       <div class="container about__container">
-        <img
-          src="<%=require('./images/image-03.png').default%>"
-          class="about__image"
-          alt="author"
-        />
+        <picture>
+          <source
+            srcset="<%=require('./images/image-03-320px.png').default%>"
+            media="(max-width: 320px)"
+          />
+          <img
+            src="<%=require('./images/image-03.png').default%>"
+            alt="avatar"
+            class="about__image"
+          />
+        </picture>
         <div class="about__texts">
           <h3 class="about__title">Об авторе</h3>
           <p class="about__paragraph">
@@ -127,7 +137,7 @@
           <a href="https://github.com/" class="section-header__link">
             Открыть в Github
             <img
-              class="section-header__link__image"
+              class="link__image_section-header"
               src="<%=require('./images/arrow.svg').default%>"
               alt="move"
             />
@@ -138,121 +148,111 @@
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide commits__card">
-              <time class="commits__card__time" datetime="2019-08-02"
+              <time class="card__time_commits" datetime="2019-08-02"
                 >14 августа, 2019</time
               >
-              <div class="commits__card__author">
+              <div class="card__author">
                 <img
                   src="<%=require('./images/commits/01.png').default%>"
                   alt="avatar"
-                  class="commits__card__author__avatar"
+                  class="author__avatar"
                 />
-                <div class="commits__card__author__text">
-                  <span class="commits__card__author__text__name"
-                    >Антон Долинин</span
-                  >
-                  <span class="commits__card__author__text__email">
+                <div class="author__text">
+                  <span class="text__name">Антон Долинин</span>
+                  <span class="text__email">
                     anton@yandex.ru
                   </span>
                 </div>
               </div>
-              <div class="commits__card__text">
+              <div class="card__text">
                 Emmet (formerly Zen Coding) is a web- developer’s toolkit that
                 can greatly improve your HTML & CSS workflow.
               </div>
             </li>
             <li class="glide__slide commits__card">
-              <time class="commits__card__time" datetime="2019-08-02"
+              <time class="card__time_commits" datetime="2019-08-02"
                 >14 августа, 2019</time
               >
-              <div class="commits__card__author">
+              <div class="card__author">
                 <img
                   src="<%=require('./images/commits/02.png').default%>"
                   alt="avatar"
-                  class="commits__card__author__avatar"
+                  class="author__avatar"
                 />
-                <div class="commits__card__author__text">
-                  <span class="commits__card__author__text__name"
-                    >Антон Долинин</span
-                  >
-                  <span class="commits__card__author__text__email">
+                <div class="author__text">
+                  <span class="text__name">Антон Долинин</span>
+                  <span class="text__email">
                     anton@yandex.ru
                   </span>
                 </div>
               </div>
-              <div class="commits__card__text">
+              <div class="card__text">
                 Emmet (formerly Zen Coding) is a web- developer’s toolkit that
                 can greatly improve your HTML & CSS workflow.
               </div>
             </li>
             <li class="glide__slide commits__card">
-              <time class="commits__card__time" datetime="2019-08-02"
+              <time class="card__time_commits" datetime="2019-08-02"
                 >14 августа, 2019</time
               >
-              <div class="commits__card__author">
+              <div class="card__author">
                 <img
                   src="<%=require('./images/commits/03.png').default%>"
                   alt="avatar"
-                  class="commits__card__author__avatar"
+                  class="author__avatar"
                 />
-                <div class="commits__card__author__text">
-                  <span class="commits__card__author__text__name"
-                    >Антон Долинин</span
-                  >
-                  <span class="commits__card__author__text__email">
+                <div class="author__text">
+                  <span class="text__name">Антон Долинин</span>
+                  <span class="text__email">
                     anton@yandex.ru
                   </span>
                 </div>
               </div>
-              <div class="commits__card__text">
+              <div class="card__text">
                 Emmet (formerly Zen Coding) is a web- developer’s toolkit that
                 can greatly improve your HTML & CSS workflow.
               </div>
             </li>
             <li class="glide__slide commits__card">
-              <time class="commits__card__time" datetime="2019-08-02"
+              <time class="card__time_commits" datetime="2019-08-02"
                 >14 августа, 2019</time
               >
-              <div class="commits__card__author">
+              <div class="card__author">
                 <img
                   src="<%=require('./images/commits/01.png').default%>"
                   alt="avatar"
-                  class="commits__card__author__avatar"
+                  class="author__avatar"
                 />
-                <div class="commits__card__author__text">
-                  <span class="commits__card__author__text__name"
-                    >Антон Долинин</span
-                  >
-                  <span class="commits__card__author__text__email">
+                <div class="author__text">
+                  <span class="text__name">Антон Долинин</span>
+                  <span class="text__email">
                     anton@yandex.ru
                   </span>
                 </div>
               </div>
-              <div class="commits__card__text">
+              <div class="card__text">
                 Emmet (formerly Zen Coding) is a web- developer’s toolkit that
                 can greatly improve your HTML & CSS workflow.
               </div>
             </li>
             <li class="glide__slide commits__card">
-              <time class="commits__card__time" datetime="2019-08-02"
-                >14 августа, 2019</time
-              >
-              <div class="commits__card__author">
+              <time class="card__time_commits" datetime="2019-08-02">
+                14 августа, 2019
+              </time>
+              <div class="card__author">
                 <img
                   src="<%=require('./images/commits/02.png').default%>"
                   alt="avatar"
-                  class="commits__card__author__avatar"
+                  class="author__avatar"
                 />
-                <div class="commits__card__author__text">
-                  <span class="commits__card__author__text__name"
-                    >Антон Долинин</span
-                  >
-                  <span class="commits__card__author__text__email">
+                <div class="author__text">
+                  <span class="text__name">Антон Долинин</span>
+                  <span class="text__email">
                     anton@yandex.ru
                   </span>
                 </div>
               </div>
-              <div class="commits__card__text">
+              <div class="card__text">
                 Emmet (formerly Zen Coding) is a web- developer’s toolkit that
                 can greatly improve your HTML & CSS workflow.
               </div>
@@ -264,14 +264,14 @@
             <img
               src="<%=require('./images/arrow.svg').default%>"
               alt="left"
-              class="glide__arrow__image glide__arrow__image--left"
+              class="arrow__image arrow__image_left"
             />
           </button>
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
             <img
               src="<%=require('./images/arrow.svg').default%>"
               alt="right"
-              class="glide__arrow__image"
+              class="arrow__image"
             />
           </button>
         </div>
@@ -298,20 +298,20 @@
           </li>
         </ul>
         <div class="footer__social">
-          <a href="https://github.com/" class="footer__social__link">
+          <a href="https://github.com/" class="social__link">
             <img
               src="<%=require('./images/github.svg').default%>"
               alt="github"
               title="github"
-              class="footer__social__link__image"
+              class="link__image"
             />
           </a>
-          <a href="https://www.facebook.com/" class="footer__social__link">
+          <a href="https://www.facebook.com/" class="social__link">
             <img
               src="<%=require('./images/facebook.svg').default%>"
               alt="facebook"
               title="facebook"
-              class="footer__social__link__image"
+              class="link__image"
             />
           </a>
         </div>
