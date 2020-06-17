@@ -76,7 +76,7 @@ module.exports = {
       // Означает, что:
       template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
       filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
-      minify: false,
+      
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
