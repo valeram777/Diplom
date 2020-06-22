@@ -1,0 +1,7 @@
+@import url('./__avatar/author__avatar.css');
+@import url('./__text/author__text.css');
+
+.card__author {
+  display: flex;
+  align-items: center;
+}

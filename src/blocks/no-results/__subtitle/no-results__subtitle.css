@@ -1,0 +1,11 @@
+.no-results__subtitle {
+  display: inline-block;
+  font-family: "Roboto-regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #b6bcbf;
+  width: 356px;
+}

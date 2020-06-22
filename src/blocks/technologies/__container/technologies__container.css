@@ -1,0 +1,10 @@
+.technologies__container {
+  display: grid;
+  grid-template-columns: calc(100% / 12 * 4) calc(100% / 12 * 8);
+}
+
+@media (max-width: 1300px) {
+  .technologies__container {
+    grid-template-columns: 100%;
+  }
+}

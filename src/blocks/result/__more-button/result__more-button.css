@@ -1,0 +1,22 @@
+.result__more-button {
+  background-color: #fff;
+  border-radius: 80px;
+  font-family: "Roboto-regular", sans-serif;
+  padding: 16px 84px;
+  border: none;
+  display: block;
+  margin: 64px auto 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.result__more-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 510px) {
+  .result__more-button {
+    margin: 12px auto 0;
+    padding: 16px 0;
+    width: 100%;
+  }
+}

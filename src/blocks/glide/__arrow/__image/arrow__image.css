@@ -1,0 +1,6 @@
+@import url("./_left/arrow__image_left.css");
+
+.arrow__image {
+  filter: brightness(0) invert(1);
+  width: 30px;
+}

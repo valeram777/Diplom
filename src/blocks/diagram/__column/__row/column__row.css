@@ -1,0 +1,8 @@
+@import url('./_last/column__row_last.css');
+
+.column__row {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,14 @@
+@import url('./__header/diagram__header.css');
+@import url('./__table/diagram__table.css');
+@import url('./__column/diagram__column.css');
+
+.diagram {
+  padding: 80px 0;
+  background: #f5f6f7;
+}
+
+@media (max-width: 650px) {
+  .diagram {
+    padding: 24px 0;
+  }
+}

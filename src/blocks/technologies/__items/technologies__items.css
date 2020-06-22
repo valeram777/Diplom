@@ -1,0 +1,21 @@
+@import url("./__item/technologies__item.css");
+
+.technologies__items {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1300px) {
+  .technologies__items {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 670px) {
+  .technologies__items {
+    flex-wrap: wrap;
+  }
+}

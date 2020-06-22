@@ -1,0 +1,13 @@
+.card__subtitle {
+  padding: 0 24px;
+  font-family: "Roboto-regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 55px;
+}
+
+@media (max-width: 700px) {
+  .card__subtitle {
+    padding: 0 16px;
+  }
+}

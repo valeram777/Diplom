@@ -1,0 +1,16 @@
+@import url("./__menu-item/footer__menu-item.css");
+
+.footer__menu {
+  display: inline-flex;
+  text-decoration: none;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 800px) {
+  .footer__menu {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,7 @@
+.commits__card__time {
+  display: inline-block;
+  font-family: 'Roboto-regular';
+  font-size: 14px;
+  color: #B6BCBF;
+  margin-bottom: 20px;
+}

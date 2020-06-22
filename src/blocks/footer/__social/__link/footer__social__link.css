@@ -1,0 +1,11 @@
+@import url('./__image/footer__social__link__image.css');
+
+.footer__social__link {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.footer__social__link:first-child {
+  margin-right: 20px;
+}

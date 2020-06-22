@@ -1,0 +1,14 @@
+.result__card__title {
+  font-family: "Roboto-slab-regular";
+  font-size: 26px;
+  padding: 0 24px;
+  margin: 0 0 16px;
+  font-weight: normal;
+}
+
+@media (max-width: 700px) {
+  .result__card__title {
+    font-size: 22px;
+    padding: 0 16px;
+  }
+}

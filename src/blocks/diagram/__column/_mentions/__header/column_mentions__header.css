@@ -1,0 +1,5 @@
+@media (max-width: 650px) {
+  .column_mentions .column__header {
+    margin-bottom: 12px;
+  }
+}

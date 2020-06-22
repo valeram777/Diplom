@@ -1,0 +1,16 @@
+.header-section__header {
+  display: inline-block;
+  font-family: "Roboto-slab-regular", sans-serif;
+  font-size: 60px;
+  line-height: 64px;
+  color: #ffffff;
+  margin: 80px 0 30px;
+}
+
+@media (max-width: 510px) {
+  .header-section__header {
+    font-size: 36px;
+    line-height: 40px;
+    margin: 30px 0 16px;
+  }
+}

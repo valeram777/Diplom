@@ -1,0 +1,18 @@
+@import url("./__time/card__time.css");
+@import url("./__author/card__author.css");
+@import url("./__text/card__text.css");
+
+.commits__card {
+  width: 400px;
+  height: 300px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .commits__card {
+    height: 250px;
+  }
+}

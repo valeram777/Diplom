@@ -1,0 +1,21 @@
+.about__image {
+  box-sizing: border-box;
+  padding-right: 50px;
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 1025px) {
+  .about__image {
+    padding-right: 32px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .about__image {
+    margin: 0 auto 24px;
+    max-width: 300px;
+    padding-right: 0;
+  }
+}

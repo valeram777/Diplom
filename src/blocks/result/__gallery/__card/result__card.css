@@ -1,0 +1,12 @@
+@import url("./__image/card__image.css");
+@import url("./__source/card__source.css");
+@import url("./__subtitle/card__subtitle.css");
+@import url("./__time/card__time.css");
+@import url("./__title/card__title.css");
+
+.result__card {
+  border-radius: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+}

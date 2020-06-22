@@ -1,0 +1,12 @@
+.logo__text {
+  font-family: "Roboto-slab-bold", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 510px) {
+  .logo__text {
+    font-size: 14px;
+  }
+}

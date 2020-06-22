@@ -1,0 +1,10 @@
+.header-section__form {
+  position: relative;
+  margin-top: 100px;
+}
+
+@media (max-width: 510px) {
+  .header-section__form {
+    margin-top: 60px;
+  }
+}

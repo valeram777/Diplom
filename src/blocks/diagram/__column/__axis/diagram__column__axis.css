@@ -1,0 +1,14 @@
+@import url("./__list/diagram__column__axis__list.css");
+@import url("./__item/diagram__column__axis__item.css");
+
+.diagram__column__axis {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  .diagram__column__axis {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+.footer__container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .footer__container {
+    flex-direction: column-reverse;
+    align-items: start;
+    height: auto;
+    padding: 0 0 20px;
+    position: relative;
+  }
+}

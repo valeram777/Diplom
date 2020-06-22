@@ -1,0 +1,7 @@
+@import url('./__avatar/commits__card__author__avatar.css');
+@import url('./__text/commits__card__author__text.css');
+
+.commits__card__author {
+  display: flex;
+  align-items: center;
+}

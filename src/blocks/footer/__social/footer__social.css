@@ -1,0 +1,9 @@
+@import url('./__link/social__link.css');
+
+@media (max-width: 800px) {
+  .footer__social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

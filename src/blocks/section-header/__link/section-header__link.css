@@ -1,0 +1,14 @@
+@import url("./__image/link__image.css");
+
+.section-header__link {
+  font-family: "Roboto-medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1a1b22;
+  text-decoration: none;
+}

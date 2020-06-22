@@ -1,0 +1,11 @@
+.text__name {
+  font-family: 'Roboto-slab-regular';
+  font-size: 26px;
+  display: block;
+}
+
+@media (max-width: 950px) {
+  .text__name {
+    font-size: 20px;
+  }
+}

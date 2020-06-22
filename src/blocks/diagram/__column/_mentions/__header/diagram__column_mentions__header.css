@@ -1,0 +1,6 @@
+
+@media (max-width: 650px) {
+  .diagram__column_mentions .diagram__column__header {
+    margin-bottom: 12px;
+  }
+}

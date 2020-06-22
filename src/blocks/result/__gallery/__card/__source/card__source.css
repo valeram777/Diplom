@@ -1,0 +1,18 @@
+.card__source {
+  padding: 0 24px;
+  font-family: "Roboto-slab-bold", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  color: #b6bcbf;
+  position: absolute;
+  bottom: 24px;
+}
+
+@media (max-width: 700px) {
+  .card__source {
+    padding: 0 16px;
+    font-size: 14px;
+  }
+}

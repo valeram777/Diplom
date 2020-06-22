@@ -1,0 +1,9 @@
+.diagram__column_date .diagram__column__header {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 650px) {
+  .diagram__column_date .diagram__column__header {
+    margin-bottom: 12px;
+  }
+}

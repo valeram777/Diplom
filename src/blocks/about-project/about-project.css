@@ -1,0 +1,12 @@
+@import url('./__text/about-project__text.css');
+@import url('./__header/about-project__header.css');
+
+.about-project {
+  padding: 80px 0;
+}
+
+@media (max-width: 1026px) {
+  .about-project {
+    padding: 24px 0;
+  }
+}

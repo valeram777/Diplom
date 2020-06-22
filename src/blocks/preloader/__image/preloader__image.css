@@ -1,0 +1,12 @@
+.preloader__image {
+	display: block;
+	width: 70px;
+  animation: spin .75s infinite linear;
+  margin-bottom: 24px;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(-360deg);
+	}
+}
