@@ -1,13 +1,16 @@
+@import url('./_active/result__more-button_active.css');
+
 .result__more-button {
   background-color: #fff;
   border-radius: 80px;
   font-family: "Roboto-regular", sans-serif;
   padding: 16px 84px;
   border: none;
-  display: block;
+  display: none;
   margin: 64px auto 0;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  outline: none;
 }
 .result__more-button:hover {
   opacity: 0.8;

@@ -8,10 +8,11 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
+  devtool: isDev && 'source-map',
   entry: {
-    index: './src/js/index.js',
-    about: './src/js/about/index.js',
-    analytics: './src/js/analytics/index.js',
+    index: './src/index.js',
+    about: './src/about/index.js',
+    analytics: './src/analytics/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -76,15 +77,17 @@ module.exports = {
       // Означает, что:
       template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
       filename: 'index.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
-      
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: 'about.html',
+      template: './src/about/index.html',
+      filename: 'about/index.html',
+      chunks: ['about'],
     }),
     new HtmlWebpackPlugin({
-      template: './src/analytics.html',
-      filename: 'analytics.html',
+      template: './src/analytics/index.html',
+      filename: 'analytics/index.html',
+      chunks: ['analytics'],
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

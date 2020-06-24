@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsAnalyzer</title>
+    <meta
+      name="description"
+      content="Дипломный проект студента Яндекс.Практикума."
+    />
+    <meta name="author" content="Валерий Мальцев" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="<%=require('../images/favicon.svg').default%>"
+    />
+  </head>
+
+  <body class="body">
+    <header class="header header_dark">
+      <div class="container header__container">
+        <div class="logo">
+          <h3 class="logo__text">NewsAnalyzer</h3>
+        </div>
+        <ul class="header__menu">
+          <li>
+            <a href="/dist/index.html" class="menu__item">Главная</a>
+          </li>
+          <li>
+            <a href="/dist/about/index.html" class="menu__item menu__item_active">О проекте</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="about-project">
+      <div class="container">
+        <h3 class="about-project__header">Клиентам</h3>
+        <p class="about-project__text">
+          Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель —
+          показать, чему научился студент, какими технологиями владеет.
+          <br /><br />
+          Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и
+          масштабируемым. Кроме того, добавлять новые страницы и
+          функциональность проще и быстрее, чем в проектах, выполненных по
+          другим методологиям. Также сайт проще и дешевле поддерживать.
+          <br /><br />
+          Карточки с новостями приходят с сервера и обрабатываются асинхронно.
+          То есть сайт продолжает работать, пока от сервера приходит ответ. Это
+          повышает удобство использования сервиса.
+          <br /><br />
+          При создании проекта была использована сборка технологией Webpack. Это
+          современный подход к разработке сайтов. Код оптимизируется, а значит,
+          сайт работает быстрее. Также сайт работает в старых браузерах. Даже
+          если посетители — пользователи старых операционных систем, у них не
+          будет проблем с отображением. А значит, потенциальная аудитория
+          возрастает.
+          <br /><br />
+          Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу
+          нужен сайт, мы рекомендуем обратиться к этому студенту.
+        </p>
+      </div>
+    </section>
+
+    <section class="technologies">
+      <div class="container technologies__container">
+        <h3 class="technologies__header">Используемые технологии</h3>
+        <ul class="technologies__items">
+          <li class="technologies__item">
+            <span class="item__header">HTML</span>
+            <img
+              src="<%=require('../images/html.svg').default%>"
+              alt="html"
+              class="item__icon"
+            />
+          </li>
+          <li class="technologies__item">
+            <span class="item__header">CSS</span>
+            <img
+              src="<%=require('../images/css.svg').default%>"
+              alt="css"
+              class="item__icon"
+            />
+          </li>
+          <li class="technologies__item">
+            <span class="item__header">Java Script</span>
+            <img
+              src="<%=require('../images/js.svg').default%>"
+              alt="js"
+              class="item__icon"
+            />
+          </li>
+          <li class="technologies__item">
+            <span class="item__header">Webpack</span>
+            <img
+              src="<%=require('../images/webpack.svg').default%>"
+              alt="webpack"
+              class="item__icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about__container">
+        <picture>
+          <source
+            srcset="<%=require('../images/image-03-320px.png').default%>"
+            media="(max-width: 320px)"
+          />
+          <img
+            src="<%=require('../images/image-03.png').default%>"
+            alt="avatar"
+            class="about__image"
+          />
+        </picture>
+        <div class="about__texts">
+          <h3 class="about__title">Об авторе</h3>
+          <p class="about__paragraph">
+            Это блок с описанием автора проекта. Здесь следует указать, как вас
+            зовут, чем вы занимаетесь, какими технологиями разработки
+            владеете.<br /><br />
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+            научились, и чем можете помочь потенциальным заказчикам.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="commits">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-header__title">История коммитов из GitHub</h3>
+          <a
+            href="https://github.com/valeram777/Diplom"
+            class="section-header__link"
+          >
+            Открыть в Github
+            <img
+              class="link__image_section-header"
+              src="<%=require('../images/arrow.svg').default%>"
+              alt="move"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="glide">
+        <div class="commits__error"></div>
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides"></ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <img
+              src="<%=require('../images/arrow.svg').default%>"
+              alt="left"
+              class="arrow__image arrow__image_left"
+            />
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <img
+              src="<%=require('../images/arrow.svg').default%>"
+              alt="right"
+              class="arrow__image"
+            />
+          </button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]"></div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container footer__container">
+        <div class="footer__copyright">&copy; 2019 Supersite</div>
+        <ul class="footer__menu">
+          <li><a href="/" class="footer__menu-item">Главная</a></li>
+          <li><a href="/about/" class="footer__menu-item">О проекте</a></li>
+          <li>
+            <a href="https://praktikum.yandex.ru/" class="footer__menu-item"
+              >Яндекс.Практикум</a
+            >
+          </li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://github.com/" class="social__link">
+            <img
+              src="<%=require('../images/github.svg').default%>"
+              alt="github"
+              title="github"
+              class="link__image"
+            />
+          </a>
+          <a href="https://www.facebook.com/" class="social__link">
+            <img
+              src="<%=require('../images/facebook.svg').default%>"
+              alt="facebook"
+              title="facebook"
+              class="link__image"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
