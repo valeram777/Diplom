@@ -6,7 +6,7 @@ export default class NewsApi {
     return fetch(
       `${
         urls.NEWS_API
-      }/everything?apiKey=${NEWS_API_KEY}&q=${searchText}&pageSize=100&language=ru&to=${formatJSDate(
+      }/everything?apiKey=${NEWS_API_KEY}&q=${searchText}&pageSize=100&language=en&to=${formatJSDate(
         new Date()
       )}&from=${formatJSDate(getDate(new Date(), 7))}`
     ).then((res) => res.json())
