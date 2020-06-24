@@ -144,9 +144,11 @@ const searchInput = new SearchInput(
         }
       })
       .catch((error) => {
+        preloader.classList.remove(indexSelectors.PRELOADER + '_active')
         result.classList.remove(indexSelectors.RESULT + '_active')
         noResults.classList.add(indexSelectors.NO_RESULTS + '_active')
         noResultsSubtitle.textContent = `Ошибка: ${error.message}`
+        console.log(error)
       })
   },
   {

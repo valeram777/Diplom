@@ -28,9 +28,8 @@ export const aboutSelectors = {
 }
 
 export const urls = {
-  NEWS_API: 'https://newsapi.org/v2',
+  NEWS_API: 'https://praktikum.tk/news/v2',
   GITHUB_API: 'https://api.github.com',
-  CORS_PROXY: 'https://cors-anywhere.herokuapp.com',
 }
 
 export const NEWS_API_KEY = '482d083900f44dbc992e9d0195a02dca'
