@@ -61,3 +61,6 @@ export const daysOfWeek = {
 
 export const gitName = 'valeram777'
 export const gitRepo = 'Diplom'
+
+export const newsDaysAgo = 7
+export const cardsCount = 3

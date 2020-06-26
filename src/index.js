@@ -48,38 +48,6 @@ const newsCardList = new NewsCardList(
         newsCardList.showMore()
       },
     },
-    {
-      node: analyticsLink,
-      event: 'click',
-      cb: () => {
-        dataStorage.setItem(
-          'analytics',
-          {
-            search: searchInput.activeSearch,
-            counts: newsCardList.cards.length,
-            headersCounts: newsCardList.cards.reduce(
-              (sum, item) =>
-                sum + !!item.header.includes(searchInput.activeSearch),
-              0
-            ),
-            countsPerDay: Array(7)
-              .fill()
-              .map((item, index) => index)
-              .reverse()
-              .map((daysAgo) => {
-                const date = formatJSDate(getDate(new Date(), daysAgo))
-                return {
-                  date,
-                  counts: newsCardList.cards.reduce(
-                    (sum, item) => sum + !!(item.time.slice(0, 10) === date),
-                    0
-                  ),
-                }
-              }),
-          }
-        )
-      },
-    },
   ],
   [],
   {
@@ -113,12 +81,14 @@ const searchInput = new SearchInput(
     result.classList.remove(indexSelectors.RESULT + '_active')
     preloader.classList.add(indexSelectors.PRELOADER + '_active')
 
+    searchInput.block()
     newsApi
       .getNews(value)
       .then((res) => {
+        searchInput.unblock()
         preloader.classList.remove(indexSelectors.PRELOADER + '_active')
 
-        if (res.status === 'ok' && res.totalResults) {
+        if (res.totalResults) {
           result.classList.add(indexSelectors.RESULT + '_active')
 
           newsCardList.setCards(
@@ -138,17 +108,20 @@ const searchInput = new SearchInput(
         } else {
           noResults.classList.add(indexSelectors.NO_RESULTS + '_active')
           noResultsSubtitle.textContent =
-            res.status === 'ok'
-              ? 'К сожалению по вашему запросу ничего не найдено.'
-              : 'Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз'
+            'К сожалению по вашему запросу ничего не найдено.'
         }
+
+        dataStorage.setItem('analytics', {
+          search: searchInput.activeSearch,
+          articles: res.articles,
+        })
       })
-      .catch((error) => {
+      .catch((res) => {
         preloader.classList.remove(indexSelectors.PRELOADER + '_active')
         result.classList.remove(indexSelectors.RESULT + '_active')
         noResults.classList.add(indexSelectors.NO_RESULTS + '_active')
-        noResultsSubtitle.textContent = `Ошибка: ${error.message}`
-        console.log(error)
+        noResultsSubtitle.textContent =
+          'Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз'
       })
   },
   {
@@ -157,3 +130,26 @@ const searchInput = new SearchInput(
     form: searchInputForm,
   }
 )
+
+const storage = dataStorage.getItem('analytics')
+if (storage.search) {
+  searchInput.setValue(storage.search)
+}
+if (storage.articles) {
+  result.classList.add(indexSelectors.RESULT + '_active')
+
+  newsCardList.setCards(
+    storage.articles.map(
+      (item) =>
+        new NewsCard({
+          imgSrc: item.urlToImage,
+          time: item.publishedAt,
+          header: item.title,
+          text: formatText(item.content),
+          source: item.source.name,
+          link: item.url,
+        })
+    )
+  )
+  newsCardList.render()
+}

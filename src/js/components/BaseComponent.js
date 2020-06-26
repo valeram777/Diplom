@@ -5,7 +5,6 @@ export default class BaseComponent {
 
   _setHandlers(handlers) {
     handlers.forEach(item => {
-      console.log(item)
       item.node.addEventListener(item.event, item.cb)
     })
   }

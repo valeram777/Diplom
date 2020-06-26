@@ -30,13 +30,13 @@ export default class NewsCard {
             </time>`
             : ''
         }
-        <h6 class="card__title">${this.header}</h6>
+        <h6 class="card__title">${htmlEncode(this.header)}</h6>
         ${
           this.text
             ? `<p class="card__subtitle">${htmlEncode(this.text)}</p>`
             : ''
         }
-        <span class="card__source">${this.source}</span>
+        <span class="card__source">${htmlEncode(this.source)}</span>
         </a>
       </div>
     `

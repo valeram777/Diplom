@@ -1,4 +1,4 @@
-import { formatJSDate } from '../utils'
+import { formatJSDate, htmlEncode } from '../utils'
 
 export default class CommitCard {
   constructor(params) {
@@ -26,20 +26,20 @@ export default class CommitCard {
               : ''
           }
           <div class="author__text">
-            <span class="text__name">${this.name}</span>
+            <span class="text__name">${htmlEncode(this.name)}</span>
             <span class="text__email">
               ${
                 this.imgSrc
-                  ? `${this.email.split('@')[0]}<br />@${
-                      this.email.split('@')[1]
+                  ? `${htmlEncode(this.email.split('@')[0])}<br />@${
+                      htmlEncode(this.email.split('@')[1])
                     }`
-                  : this.email
+                  : htmlEncode(this.email)
               }
             </span>
           </div>
         </div>
         <div class="card__text">
-          ${this.text}
+          ${htmlEncode(this.text)}
         </div>
       </li>
     `

@@ -12,6 +12,23 @@ export default class SearchInput extends BaseComponent {
     this.activeSearch = null
   }
 
+  block() {
+    this.input.disabled = true
+    this.button.disabled = true
+    this.button.classList.add(this.buttonClass + '_disabled')
+  }
+
+  unblock() {
+    this.input.disabled = true
+    this.button.disabled = true
+    this.button.classList.remove(this.buttonClass + '_disabled')
+  }
+
+  setValue(value) {
+    this.input.value = value
+    this.checkValidity()
+  }
+
   checkValidity(isSubmit) {
     this.invalidities = []
     this.button.classList.remove(this.buttonClass + '_disabled')
