@@ -1,6 +1,7 @@
 @import url("./__image/no-results__image.css");
 @import url("./__subtitle/no-results__subtitle.css");
 @import url("./__title/no-results__title.css");
+@import url("./_active/no-results_active.css");
 
 .no-results {
   background: #f5f6f7;

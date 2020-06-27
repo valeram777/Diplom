@@ -1,0 +1,1 @@
+const searchButton = document.querySelector(".header-section__button");

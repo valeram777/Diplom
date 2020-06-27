@@ -1,9 +1,10 @@
 @import url("./__container/result__container.css");
 @import url("./__gallery/result__gallery.css");
 @import url("./__more-button/result__more-button.css");
+@import url("./_active/result_active.css");
 
 .result {
-  display: block;
+  display: none;
   width: 100%;
   background: #f5f6f7;
   padding: 80px 0;

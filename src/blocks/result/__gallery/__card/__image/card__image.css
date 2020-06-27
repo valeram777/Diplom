@@ -2,5 +2,6 @@
   width: 100%;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  margin-bottom: 20px;
+  height: 230px;
+  object-fit: cover;
 }

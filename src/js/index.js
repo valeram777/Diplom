@@ -1,3 +1,5 @@
 import '../vendor/fonts.css'
 import '../vendor/normalize.css'
 import '../pages/index.css'
+import '../js/constants/constants.js'
+import '../js/modules/modules.js'

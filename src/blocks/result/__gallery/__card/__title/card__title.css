@@ -4,6 +4,7 @@
   padding: 0 24px;
   margin: 0 0 16px;
   font-weight: normal;
+  word-break: break-word;
 }
 
 @media (max-width: 700px) {

@@ -1,0 +1,4 @@
+.header-section__button.header-section__button_disabled {
+  filter: grayscale(1);
+  cursor: default;
+}
